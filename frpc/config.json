@@ -1,0 +1,20 @@
+{
+  "name": "frpc",
+  "version": "0.0.1",
+  "slug": "frpc",
+  "description": "Start frpc",
+  "arch": ["amd64"],
+  "url": "https://github.com/left4taco/ha-frpc-addon",
+  "startup": "application",
+  "boot": "auto",
+  "host_network": true,
+  "map": ["share"],
+  "image": "left4taco/ha-frpc-addon",
+  "ports": {
+    "7000/tcp": 7000
+  },
+  "watchdog": "http://[HOST]:7000",
+  "ports_description": {
+    "700/tcp": "Admin portal"
+  }
+}
