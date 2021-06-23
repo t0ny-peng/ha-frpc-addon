@@ -8,7 +8,7 @@
   "startup": "application",
   "boot": "auto",
   "host_network": true,
-  "map": ["share"],
+  "map": ["share", "ssl"],
   "image": "left4taco/ha-frpc-addon",
   "ports": {
     "7000/tcp": 7000
